@@ -5,11 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 
 import 'Features/Splash/presentation/views/splash_view.dart';
 
 void main() async {
   runApp(const Bookly());
+  Hive.initFlutter();
   Hive.registerAdapter(BookEntityAdapter());
   await Hive.openBox(kFeaturedBox);
 }
