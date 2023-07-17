@@ -29,7 +29,7 @@ class HomeRemoteDatasourceImpl extends HomeRemoteDataSource {
         "volumes?Filtering=free-ebooks&Sorting=newest&q=Subject:Programming";
     var data = await apiService.get(endPoint: endPoint);
     List<BookEntity> books = getBooksList(data);
-
+    saveBooksData(books, kNewsetBox);
     return books;
   }
 

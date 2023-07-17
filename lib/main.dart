@@ -14,6 +14,7 @@ void main() async {
   Hive.initFlutter();
   Hive.registerAdapter(BookEntityAdapter());
   await Hive.openBox(kFeaturedBox);
+  await Hive.openBox(kNewsetBox);
 }
 
 class Bookly extends StatelessWidget {
