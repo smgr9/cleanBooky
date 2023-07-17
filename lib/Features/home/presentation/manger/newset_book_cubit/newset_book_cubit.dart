@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:bookly/Features/home/domain/entities/book_entity.dart';
 import 'package:bookly/Features/home/domain/user_cases/fetch_newset_books_use_case.dart';
 import 'package:meta/meta.dart';
 

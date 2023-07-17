@@ -6,7 +6,7 @@ abstract class NewsetBookState {}
 class NewsetBookInitial extends NewsetBookState {}
 
 class NewsetBookSuccess extends NewsetBookState {
-  final BookEntity books;
+  final List<BookEntity> books;
 
   NewsetBookSuccess(this.books);
 }
