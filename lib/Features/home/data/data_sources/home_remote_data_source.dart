@@ -2,12 +2,12 @@ import 'package:bookly/Features/home/data/models/book_model/book_model.dart';
 import 'package:bookly/Features/home/domain/entities/book_entity.dart';
 import 'package:bookly/core/utils/api_service.dart';
 
-abstract class HomeRemoteDatasource {
+abstract class HomeRemoteDataSource {
   Future<List<BookEntity>> fetchFeaturedBooks();
   Future<List<BookEntity>> fetchNewestBooks();
 }
 
-class HomeRemoteDatasourceImpl extends HomeRemoteDatasource {
+class HomeRemoteDatasourceImpl extends HomeRemoteDataSource {
   final ApiService apiService;
 
   HomeRemoteDatasourceImpl(this.apiService);
